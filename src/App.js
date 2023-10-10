@@ -3,6 +3,7 @@ import './App.css';
 import CompShowCandidate from './candidates/ShowCandidates';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import CompCreateCandidate from './candidates/CreateCandidate';
+import CompEditCandidate from './candidates/EditCandidate';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path='/' element={ <CompShowCandidate/> }/>
           <Route path='/create' element={ <CompCreateCandidate/> }/>
+          <Route path='/edit/:id' element={ <CompEditCandidate/> }/>
         </Routes>
       </BrowserRouter>
     </div>
