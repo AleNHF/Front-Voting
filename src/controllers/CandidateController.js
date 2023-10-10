@@ -22,7 +22,7 @@ export const getCandidate = async (req, res) => {
                 id: req.params.id
             }
         });
-        res.json(candidate)
+        res.json(candidate[0]);
     } catch (error) {
         res.json({
             message: error.message
