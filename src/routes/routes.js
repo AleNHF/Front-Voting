@@ -9,4 +9,10 @@ router.get('/:id', getCandidate)
 router.post('/', createCandidate)
 router.put('/:id', updateCandidate)
 
+//** CRUD Votantes */
+router.get('/', getAllVoters)
+router.get('/:id', getVoter)
+router.post('/', createVoter)
+router.put('/:id', updateVoter)
+
 export default router;
